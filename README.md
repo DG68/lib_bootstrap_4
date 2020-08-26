@@ -9,6 +9,6 @@ Libary for Black Cat CMS 1.x
 See Black Cat CMS template documentation.
 
 # change log
-2020 - Update Bootstrap version to 4.5.2 (v1.1)
+2020 - Update Bootstrap version to 4.5.2 (v1.1)<br>
 2020 - First version (v1.0)
  
