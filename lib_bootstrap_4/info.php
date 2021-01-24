@@ -15,7 +15,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  *
  *   @author          Dirk Grebe
- *   @copyright       2020, Black Cat Development
+ *   @copyright       2021, Black Cat Development
  *   @link            https://blackcat-cms.org
  *   @license         http://www.gnu.org/licenses/gpl.html
  *   @category        CAT_Modules
@@ -43,8 +43,8 @@ $module_name = "Bootstrap_4";
 $module_directory = "lib_bootstrap_4";
 $module_type = "module";
 $module_function = "library";
-$module_description = "Bootstrap 4.5.3 for BlackCat CMS, including Bootswatch Themes";
-$module_version = "1.2";
+$module_description = "Bootstrap 4.5.3 for BlackCat CMS, including Bootswatch Themes. NEW: BS Icons + CKEditor StylesSet";
+$module_version = "1.3 beta";
 $module_platform = "1.x";
 $module_author = "Dirk Grebe";
 $module_guid = "65215B2E-3459-2D05-434F-2A079DD45595";
