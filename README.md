@@ -11,7 +11,7 @@ Libary for Black Cat CMS 1.x
 See Black Cat CMS template documentation.
 
 # change log
-2021 - Update Bootstrap version to 4.6<br>
+2021 - Update Bootstrap version to 4.6 (v1.4<br>
 2021 - Add. CKEditor StyleSet with Bootsrap styles, add. Bootstrap Icons (v1.3)<br> 
 2021 - Update Bootstrap version to 4.5.3 (v1.2)<br>
 2020 - Update Bootstrap version to 4.5.2 (v1.1)<br>
