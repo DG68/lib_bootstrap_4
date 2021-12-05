@@ -1,6 +1,6 @@
 <?php
-
 /**
+ *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation; either version 3 of the License, or (at
@@ -23,29 +23,39 @@
  *
  */
 
-if (defined('CAT_PATH')) {
-    if (defined('CAT_VERSION')) include(CAT_PATH.'/framework/class.secure.php');
-} elseif (file_exists($_SERVER['DOCUMENT_ROOT'].'/framework/class.secure.php')) {
-    include($_SERVER['DOCUMENT_ROOT'].'/framework/class.secure.php');
+// include class.secure.php to protect this file and the whole CMS!
+if (defined("CAT_PATH")) {
+    include CAT_PATH . "/framework/class.secure.php";
 } else {
-    $subs = explode('/', dirname($_SERVER['SCRIPT_NAME']));    $dir = $_SERVER['DOCUMENT_ROOT'];
-    $inc = false;
-    foreach ($subs as $sub) {
-        if (empty($sub)) continue; $dir .= '/'.$sub;
-        if (file_exists($dir.'/framework/class.secure.php')) {
-            include($dir.'/framework/class.secure.php'); $inc = true;    break;
-        }
+    $oneback = "../";
+    $root = $oneback;
+    $level = 1;
+    while ($level < 10 && !file_exists($root . "framework/class.secure.php")) {
+        $root .= $oneback;
+        $level += 1;
     }
-    if (!$inc) trigger_error(sprintf("[ <b>%s</b> ] Can't include class.secure.php!", $_SERVER['SCRIPT_NAME']), E_USER_ERROR);
+    if (file_exists($root . "framework/class.secure.php")) {
+        include $root . "framework/class.secure.php";
+    } else {
+        trigger_error(
+            sprintf(
+                "[ <b>%s</b> ] Can't include class.secure.php!",
+                $_SERVER["SCRIPT_NAME"]
+            ),
+            E_USER_ERROR
+        );
+    }
 }
+// end include class.secure.php
 
 $module_name = "Bootstrap_4";
 $module_directory = "lib_bootstrap_4";
 $module_type = "module";
 $module_function = "library";
-$module_description = "Bootstrap 4.6 for BlackCat CMS, including Bootswatch Themes, Icons 1.5.0 and CKEditor StylesSet 'bootstrap'";
-$module_version = "1.5";
+$module_description = "Bootstrap 4.6.1 for BlackCat CMS, including Bootswatch Themes, Icons 1.7.1 and CKEditor StylesSet 'bootstrap'";
+$module_version = "1.6";
 $module_platform = "1.x";
 $module_author = "Dirk Grebe";
 $module_guid = "65215B2E-3459-2D05-434F-2A079DD45595";
 $module_license = "GNU General Public License";
+?>
