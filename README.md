@@ -4,13 +4,14 @@ Libary for Black Cat CMS 1.x
 # Content
 <b>Bootstrap 4.6.1</b><br> - compiled and minified CSS bundles / compiled and minified JS files<br>
 <b>Bootswatch themes 4.6</b><br> - Cerulean,Cosmo,Cyborg,Darkly,Flatly,Journal,Litera,Lumen,Lux,Materia,<br>Minty,Pulse,Sandstone,Simplex,Sketchy,Slate,Solar,Spacelab,Superhero,United,Yeti<br>
-<b>Bootstrap Icons 1.7.1</b><br> - Icon library with nearly 1,500 icons. SVG sprite or web fonts<br>
+<b>Bootstrap Icons 1.8.1</b><br> - Icon library with over 1.600 icons. SVG sprite or web fonts<br>
 <b>CKEditor StyleSet</b><br> - Block styles, Inline styles and Object styles
 
 # Usage
 See Black Cat CMS template documentation.
 
 # change log
+2022 - Update Bootstrap icons to 1.8.1 (v1.7)<br>
 2021 - Update Bootstrap version to 4.6.1 and Bootstrap icons to 1.7.1 (v1.6)<br>
 2021 - Update Bootstrap icons to 1.5.0 (v1.5)<br>
 2021 - Update Bootstrap version to 4.6 (v1.4)<br>
